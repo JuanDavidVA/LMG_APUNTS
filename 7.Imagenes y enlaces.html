@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,81 +9,166 @@
     <meta name="author" content="Juan David">
     <title>APLM Juan David</title>
 </head>
-        <body>
-            <center>
-                <header>
-                    <div id="titulo">
-                        <h1>Imagenes y enlaces</h1>
-                    </div>
-                    <hr>
-                </header>
-            </center>
-                    <nav>
-                        <ul>                
-                            <li><a href="index.html">Inicio</a></li>
-                        </ul>
-            
-                        <ol style="display: flex;" >
-                            <li style="padding: 20px;"><a href="1.Introducción a HTML.html">Unidad 1: HTML basico</a></li>
-                            <li style="padding: 20px;"><a href="10.HTML5_y_su_evolucion.html">Unidad 2: HTML avanzado</a></li>
-                        </ol>
-                    </nav>
-            <nav id="lateralNav">
-                <div id="UNIDAD1"></div>
-                    <h3>Unidad 1: HTML basico</h3>
-                    <ol >
-                        <li><a href="1.Introducción a HTML.html">Introducción a HTML</a></li>
-                        <li><a href="2.Estructura basica y etiquetas basicas.html">Estructura basica y etiquetas basicas</a></li>
-                        <li><a href="3.Elementos html y anidamiento.html">Elementos html y anidamiento</a></li>
-                        <li><a href="4.Atributos_html.html">Atributos html</a></li>
-                        <li><a href="5.Etiquetas para formato de texto.html">Etiquetas para formato de texto</a></li>
-                        <li><a href="6.Comentarios en html.html">Comentarios en html</a></li>
-                        <li><a href="7.Imagenes y enlaces.html">Imagenes y enlaces</a></li>
-                        <li><a href="8.Listas en html.html">Listas en html</a></li>
-                        <li><a href="9.Tablas basicas y tablas HTML.html">Tablas basicas y tablas HTML</a></li>
-                    </ol>
-                </div>
-            </nav>
+
+<body>
+    <center>
+        <header>
+            <div id="titulo">
+                <h1>Imagenes y enlaces</h1>
+            </div>
             <hr>
-            <section>
-                <article>
-                </article>
-                <article>
-                </article>
-            </section>
-                    <div i="cambiaPagina">
-                        <ul  style="display: flex;" >
-                            <li style="padding: 20px"><a href="6.Comentarios en html.html">Anterior apunte</a></li>
-                            <li style="padding: 20px"><a href="8.Listas en html.html">Siguiente apunte</a></li>
-                        </ul>
-                    </div>
-                 <hr>
-        <footer>
+        </header>
+    </center>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+        </ul>
+
+        <ol style="display: flex;">
+            <li style="padding: 20px;"><a href="1.Introducción a HTML.html">Unidad 1: HTML basico</a></li>
+            <li style="padding: 20px;"><a href="10.HTML5_y_su_evolucion.html">Unidad 2: HTML avanzado</a></li>
+        </ol>
+    </nav>
+    <nav id="lateralNav">
+        <div id="UNIDAD1"></div>
+        <h3>Unidad 1: HTML basico</h3>
+        <ol>
+            <li><a href="1.Introducción a HTML.html">Introducción a HTML</a></li>
+            <li><a href="2.Estructura basica y etiquetas basicas.html">Estructura basica y etiquetas basicas</a></li>
+            <li><a href="3.Elementos html y anidamiento.html">Elementos html y anidamiento</a></li>
+            <li><a href="4.Atributos_html.html">Atributos html</a></li>
+            <li><a href="5.Etiquetas para formato de texto.html">Etiquetas para formato de texto</a></li>
+            <li><a href="6.Comentarios en html.html">Comentarios en html</a></li>
+            <li><a href="7.Imagenes y enlaces.html">Imagenes y enlaces</a></li>
+            <li><a href="8.Listas en html.html">Listas en html</a></li>
+            <li><a href="9.Tablas basicas y tablas HTML.html">Tablas basicas y tablas HTML</a></li>
+        </ol>
+        </div>
+    </nav>
+    <hr>
+    <section>
+        <article>
+            <h3>Imagenes en HTML</h3>
+            <p>Para implementar una imagen en nuestra pagian web utilizamos <strong> &lt;img &gt;</strong> esta etiqueta
+                tiene la particularidad de que no contiene etiqueta de cierre, para poder establecer imágenes debemos
+                utilizar dicha etiqueta más los siguientes atributos.</p>
+
+            <h3>src(source):</h3>
+            <p>Este nos permite establecer la ruta tanto relativa o completa de nuestra imagen.</p>
+            <h3>alt(alternate text):</h3>
+            <p>En caso de que nuestras imágenes no se puedan cargar en la página web aparecerá un texto alternativo el
+                cual nosotros definiremos. </p>
+            <h3>Width i height:</h3>
+            <p>El width nos permite establecer la anchura de nuestra imagen y height la altura.</p>
             <center>
+                <h4>Ejemplo:</h4>
+
+                <img src="imagenes/imIMG.PNG" alt="Estructuras y atributos de insección de imagenes" width="70%">
+            </center>
+        </article>
+        <article>
+            <center>
+                <h3>Importante:</h3>
+                <table border="20px">
+                    <tr>
+                        <td>
+                            <h3>Buenas practicas a realizar:</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>El atributo alt es importanteya que este permite a el SEO entender la imagen</li>
+                                <li>Tener en cuenta el tamaño de la imagen (si ocupa mucho espacio el rendimiento sera
+                                    menor )</li>
+                                <li>Es recomendable la Utilización de porcentajes antes que pixeles, el % beneficia al
+                                    responsive</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </center>
+        </article>
+        <article>
+            <h3>Enlaces en HTML:</h3>
+
+            <p>Para realizar la implementación de enlaces tendremos la etiqueta<strong> &lt;a&gt;</strong> esta la
+                podrás utilizar tanto en enlaces externos como enlaces dentro de nuestro mismo proyecto o secciones de
+                nuestras páginas. El contenido que establezcamos entre nuestras etiquetas de apertura y cierre será el
+                texto que se visualizará para dicho link en nuestra página web. Para poder implementar nuestros enlaces
+                debemos establecer ciertos atributos para su funcionamiento: </p>
+
+            <h3> href (Hypertext reference):</h3>
+
+            <p>Nos permite establecer la ruta URL o establecer una ruta relativa </p>
+
+            <h3> target:</h3>
+
+            <p>El atributo target tiene diferente valores donde los mas imprescindibles se tratan de _blank (Nos permite
+                abrir en enlace en otra pagina) y _self (nos abre el enlace en la misma página)f</p>
+            <center>
+                <h4>Ejemplo:</h4>
+                <img src="imagenes/imgEnlaces.PNG" alt="Ejemplo de los enlaces" width="70%">
+            </center>
+        </article>
+        <article>
+            <center>
+                <h3>Importante:</h3>
+                <table border="20px">
+                    <tr>
+                        <td>
+                            <h3>Buenas practicas a realizar:</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Utilizar enlaces descriptivos</li>
+                                <li>Utilizar target _blank sólo cuando se muy necesario </li>
+                                <li>Descripción de los enlaces y  que los enlaces siempre sean accesibles.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </center>
+        </article>
+    </section>
+    <div i="cambiaPagina">
+        <ul style="display: flex;">
+            <li style="padding: 20px"><a href="6.Comentarios en html.html">Anterior apunte</a></li>
+            <li style="padding: 20px"><a href="8.Listas en html.html">Siguiente apunte</a></li>
+        </ul>
+    </div>
+    <hr>
+    <footer>
+        <center>
             <table>
                 <tr>
                     <td>
-                <div>
-                    <h4>Acerca de:</h4>
-                    <ul>    	
-                        <li><a href="Curriculum.html" target="_blank">Sobre mi(Curriculum)</a></li>
-                        <li ><a href="Objetivos de la web.html" target="_blank">Objetivos de la web</a></li>
-                        <li ><a href="https://paucasesnovescifp.cat/" target="_blank">Institución pertneciente</a></li>
-                    </ul>
-                </div>
-            </td>
-            <td>
-                <div>
-                    <h4>Redes Institución:</h4>
-                    <ul>    	
-                        <li><a href="https://www.instagram.com/paucasesnovescifp/?hl=es" target="_blank">Instagram</a></li>
-                        <li><a href="https://twitter.com/cifppau" target="_blank">X</a></li>
-                    </ul>
-                </div>
-            </td>
-            </tr>
+                        <div>
+                            <h4>Acerca de:</h4>
+                            <ul>
+                                <li><a href="Curriculum.html" target="_blank">Sobre mi(Curriculum)</a></li>
+                                <li><a href="Objetivos de la web.html" target="_blank">Objetivos de la web</a></li>
+                                <li><a href="https://paucasesnovescifp.cat/" target="_blank">Institución
+                                        pertneciente</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <h4>Redes Institución:</h4>
+                            <ul>
+                                <li><a href="https://www.instagram.com/paucasesnovescifp/?hl=es"
+                                        target="_blank">Instagram</a></li>
+                                <li><a href="https://twitter.com/cifppau" target="_blank">X</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
             </table>
         </center>
-        </footer>
-    </body>
+    </footer>
+</body>
+
 </html>
