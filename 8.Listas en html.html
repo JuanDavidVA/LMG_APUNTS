@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,81 +9,125 @@
     <meta name="author" content="Juan David">
     <title>APLM Juan David</title>
 </head>
-        <body>
-            <center>
-                <header>
-                    <div id="titulo">
-                        <h1>Listas en html</h1>
-                    </div>
-                    <hr>
-                </header>
-            </center>
-                    <nav>
-                        <ul>                
-                            <li><a href="index.html">Inicio</a></li>
-                        </ul>
-            
-                        <ol style="display: flex;" >
-                            <li style="padding: 20px;"><a href="1.Introducción a HTML.html">Unidad 1: HTML basico</a></li>
-                            <li style="padding: 20px;"><a href="10.HTML5_y_su_evolucion.html">Unidad 2: HTML avanzado</a></li>
-                        </ol>
-                    </nav>
-            <nav id="lateralNav">
-                <div id="UNIDAD1"></div>
-                    <h3>Unidad 1: HTML basico</h3>
-                    <ol >
-                        <li><a href="1.Introducción a HTML.html">Introducción a HTML</a></li>
-                        <li><a href="2.Estructura basica y etiquetas basicas.html">Estructura basica y etiquetas basicas</a></li>
-                        <li><a href="3.Elementos html y anidamiento.html">Elementos html y anidamiento</a></li>
-                        <li><a href="4.Atributos_html.html">Atributos html</a></li>
-                        <li><a href="5.Etiquetas para formato de texto.html">Etiquetas para formato de texto</a></li>
-                        <li><a href="6.Comentarios en html.html">Comentarios en html</a></li>
-                        <li><a href="7.Imagenes y enlaces.html">Imagenes y enlaces</a></li>
-                        <li><a href="8.Listas en html.html">Listas en html</a></li>
-                        <li><a href="9.Tablas basicas y tablas HTML.html">Tablas basicas y tablas HTML</a></li>
-                    </ol>
-                </div>
-            </nav>
+
+<body>
+    <center>
+        <header>
+            <div id="titulo">
+                <h1>Listas en html</h1>
+            </div>
             <hr>
-            <section>
-                <article>
-                </article>
-                <article>
-                </article>
-            </section>
-                    <div i="cambiaPagina">
-                        <ul  style="display: flex;" >
-                            <li style="padding: 20px"><a href="7.Imagenes y enlaces.html">Anterior apunte</a></li>
-                            <li style="padding: 20px"><a href="9.Tablas basicas y tablas HTML.html">Siguiente apunte</a></li>
-                        </ul>
-                    </div>
-                 <hr>
-        <footer>
+        </header>
+    </center>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+        </ul>
+
+        <ol style="display: flex;">
+            <li style="padding: 20px;"><a href="1.Introducción a HTML.html">Unidad 1: HTML basico</a></li>
+            <li style="padding: 20px;"><a href="10.HTML5_y_su_evolucion.html">Unidad 2: HTML avanzado</a></li>
+        </ol>
+    </nav>
+    <nav id="lateralNav">
+        <div id="UNIDAD1"></div>
+        <h3>Unidad 1: HTML basico</h3>
+        <ol>
+            <li><a href="1.Introducción a HTML.html">Introducción a HTML</a></li>
+            <li><a href="2.Estructura basica y etiquetas basicas.html">Estructura basica y etiquetas basicas</a></li>
+            <li><a href="3.Elementos html y anidamiento.html">Elementos html y anidamiento</a></li>
+            <li><a href="4.Atributos_html.html">Atributos html</a></li>
+            <li><a href="5.Etiquetas para formato de texto.html">Etiquetas para formato de texto</a></li>
+            <li><a href="6.Comentarios en html.html">Comentarios en html</a></li>
+            <li><a href="7.Imagenes y enlaces.html">Imagenes y enlaces</a></li>
+            <li><a href="8.Listas en html.html">Listas en html</a></li>
+            <li><a href="9.Tablas basicas y tablas HTML.html">Tablas basicas y tablas HTML</a></li>
+        </ol>
+        </div>
+    </nav>
+    <hr>
+    <section>
+        <article>
+            <h3>Listas NO ordenadas en HTML</h3>
+            <p>No requieren de un orden específico cada lista está formada por un &lt;ul&gt; y cada elemento de la
+                lista requiere estar entre &lt;li&gt; dentro del ul.</p>
             <center>
+                <h4>Ejemplo:</h4>
+
+                <img src="imagenes/imgListaNoOrdenada.PNG" alt="Esto es una lista no ordenada imagen de html"
+                    width="70%">
+            </center>
+            <h3>Listas ordenadas en HTML</h3>
+            <p>Este tipo de listas especifican el orden en el cual aparece los elementos, enumerados, también contiene
+                &lt;li&gt; por element, pero se diferencia que cada uno está dentro del &lt;ol&gt; así es como se
+                determina una lista ordenada.</p>
+            <center>
+                <h4>Ejemplo:</h4>
+
+                <img src="imagenes/imglistaOrdenadaSinAtr.PNG" alt="Esto es una lista ordenada imagen de html" width="70%">
+            </center>
+        </article>
+        <article>
+            <h3>Atributos para Listas ordenadas</h3>
+            <ol>
+                <li>El atributo (type)
+                    <p>Nos permite especificar el tipo de carácter que se desea utilizar para la enumeración de la lista
+                        ordenada como: </p>
+                    <ul>
+                        <li> A: LETRAS en MAYUSCULAS</li>
+                        <li> a: letras minusculas</li>
+                        <li> 1: numeros</li>
+                        <li> I: numeros romanos en MAJUSCULAS</li>
+                        <li> i: numeros romanos en minusculas</li>
+                    </ul>
+                </li>
+
+                <li>El atributo (start)</li>
+                <p>Este atributo nos permite especificar a partir de cual número o carácter iniciara la numeración</p>
+                <center>
+                    <h4>Ejemplo:</h4>
+                    <img src="imagenes/imgListasOrdenadasAtr.PNG" alt="Estos son atributos de listas ordenadas"
+                        width="70%">
+                </center>
+            </ol>
+        </article>
+    </section>
+    <div i="cambiaPagina">
+        <ul style="display: flex;">
+            <li style="padding: 20px"><a href="7.Imagenes y enlaces.html">Anterior apunte</a></li>
+            <li style="padding: 20px"><a href="9.Tablas basicas y tablas HTML.html">Siguiente apunte</a></li>
+        </ul>
+    </div>
+    <hr>
+    <footer>
+        <center>
             <table>
                 <tr>
                     <td>
-                <div>
-                    <h4>Acerca de:</h4>
-                    <ul>    	
-                        <li><a href="Curriculum.html" target="_blank">Sobre mi(Curriculum)</a></li>
-                        <li ><a href="Objetivos de la web.html" target="_blank">Objetivos de la web</a></li>
-                        <li ><a href="https://paucasesnovescifp.cat/" target="_blank">Institución pertneciente</a></li>
-                    </ul>
-                </div>
-            </td>
-            <td>
-                <div>
-                    <h4>Redes Institución:</h4>
-                    <ul>    	
-                        <li><a href="https://www.instagram.com/paucasesnovescifp/?hl=es" target="_blank">Instagram</a></li>
-                        <li><a href="https://twitter.com/cifppau" target="_blank">X</a></li>
-                    </ul>
-                </div>
-            </td>
-            </tr>
+                        <div>
+                            <h4>Acerca de:</h4>
+                            <ul>
+                                <li><a href="Curriculum.html" target="_blank">Sobre mi(Curriculum)</a></li>
+                                <li><a href="Objetivos de la web.html" target="_blank">Objetivos de la web</a></li>
+                                <li><a href="https://paucasesnovescifp.cat/" target="_blank">Institución
+                                        pertneciente</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <h4>Redes Institución:</h4>
+                            <ul>
+                                <li><a href="https://www.instagram.com/paucasesnovescifp/?hl=es"
+                                        target="_blank">Instagram</a></li>
+                                <li><a href="https://twitter.com/cifppau" target="_blank">X</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
             </table>
         </center>
-        </footer>
-    </body>
+    </footer>
+</body>
+
 </html>
