@@ -1,4 +1,7 @@
-<html lang="en"></html>
+<html lang="en">
+
+</html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,76 +10,122 @@
     <meta name="author" content="Juan David">
     <title>APLM Juan David</title>
 </head>
-    <body>
-        <center>
-            <header>
-                <div id="titulo">
-                    <h1>Etiqueta template y iframes</h1>
-                </div>
-                <hr>
-            </header>
-        </center>
-        <nav id="superiorNav">
-            <ul>                
-                <li><a href="index.html">Inicio</a></li>
-            </ul>
-            <ol style="display: flex;">
-                <li style="padding: 20px;"><a href="1.Introducción a HTML.html">Unidad 1: HTML basico</a></li>
-                <li style="padding: 20px;"><a href="10.HTML5_y_su_evolucion.html">Unidad 2: HTML avanzado</a></li>
-            </ol>
-        </nav>
-        <nav id="lateralNav">
-            <div id="UNIDAD2">
-                    <h3>Unidad 2: HTML avanzado</h3>
-                <ol>
-                    <li><a  href="10.HTML5_y_su_evolucion.html">HTML5 y su evolución</a></li>
-                    <li><a href="11.Formularios con HTML.html">Formularios con HTML</a></li>
-                    <li><a href="12.Validación de Formularios.html">Validación de Formularios</a></li>
-                    <li><a href="13.Tipos de entradas especiales.html">Tipos de entradas especiales</a></li>
-                    <li><a href="14.Multimedia en html.html">Multimedia en html</a></li>
-                    <li><a href="15.Etiqueta center y div.html">Etiqueta center y div</a></li>
-                    <li><a href="16.Etiqueta span y hr.html">Etiqueta span y hr</a></li>
-                    <li><a href="17.Etiqueta template y iframes .html">Etiqueta template y iframes</a></li>
-                    <li><a href="18.Metadatos en html.html">Metadatos en html</a></li>
-                    <li><a href="19.Metadatos en html (parte 2).html">Metadatos en html (parte 2)</a></li>
-                </ol>
+
+<body>
+    <center>
+        <header>
+            <div id="titulo">
+                <h1>Etiqueta template y iframes</h1>
             </div>
-        </nav>
-        <hr>
-        <section>
-        </section>
-        <div i="cambiaPagina">
-            <ul  style="display: flex;" >
-                <li style="padding: 20px"><a href="16.Etiqueta span y hr.html">Anterior </a></li>
-                <li style="padding: 20px"><a href="18.Metadatos en html.html">Siguiente apunte</a></li>
-            </ul>
+            <hr>
+        </header>
+    </center>
+    <nav id="superiorNav">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+        </ul>
+        <ol style="display: flex;">
+            <li style="padding: 20px;"><a href="1.Introducción a HTML.html">Unidad 1: HTML basico</a></li>
+            <li style="padding: 20px;"><a href="10.HTML5_y_su_evolucion.html">Unidad 2: HTML avanzado</a></li>
+        </ol>
+    </nav>
+    <nav id="lateralNav">
+        <div id="UNIDAD2">
+            <h3>Unidad 2: HTML avanzado</h3>
+            <ol>
+                <li><a href="10.HTML5_y_su_evolucion.html">HTML5 y su evolución</a></li>
+                <li><a href="11.Formularios con HTML.html">Formularios con HTML</a></li>
+                <li><a href="12.Validación de Formularios.html">Validación de Formularios</a></li>
+                <li><a href="13.Tipos de entradas especiales.html">Tipos de entradas especiales</a></li>
+                <li><a href="14.Multimedia en html.html">Multimedia en html</a></li>
+                <li><a href="15.Etiqueta center y div.html">Etiqueta center y div</a></li>
+                <li><a href="16.Etiqueta span y hr.html">Etiqueta span y hr</a></li>
+                <li><a href="17.Etiqueta template y iframes .html">Etiqueta template y iframes</a></li>
+                <li><a href="18.Metadatos en html.html">Metadatos en html</a></li>
+                <li><a href="19.Metadatos en html (parte 2).html">Metadatos en html (parte 2)</a></li>
+            </ol>
+        </div>
+    </nav>
+    <hr>
+    <section>
+        <article>
+            <h3>Etiqueta (&lt;template&gt;)</h3>
+            <p>La etiqueta template nos permite definir fragmente s html reutilizables evitando grandes repeticiones de
+                contenido, pero este template no se inserta dentro de la página hasta que sea modificado con javascript,
+                beneficiosos para las páginas dinámicas</p>
+
+            <p> Se debe de tener en cuenta a realizar siempre las pantallas lo más simples posibles de forma que permita
+                la reutilización fácilmente, tener en cuenta la necesidad de javascript. </p>
+            <center>
+                <h4>Ejemplo:</h4>
+                <img src="imagenes/imgTemplate.PNG" alt="Estructura de un template" width="50%">
+            </center>
+
+        </article>
+        <article>
+            <h3>Etiqueta (&lt;iframe&gt;)</h3>
+            <p>Se trata de una etiqueta html el cual nos permite insertar páginas html dentro de otra página web. Se trata de una forma de incrustar contenido externo de forma segura.</p>
+            <center>
+                <h4>Ejemplo:</h4>
+                <img src="imagenes/imgIframes.PNG" alt="Una tabla basica de html con atributos y thead, tbody y th" width="50%">
+            </center>
+        </article>
+        <article>
+            <center>
+                <h3>Importante:</h3>
+                <table border="20px">
+                    <tr>
+                        <td>
+                            <h3>Buenas practicas a realizar:</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Tener en cuenta utilizar el atributo sandbox para mejorar la seguridad, utilizar una dimensiones correctas ya que si estas son demasiado altas pueden generar problemas.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </center>
+        </article>
+    </section>
+    </section>
+    <div i="cambiaPagina">
+        <ul style="display: flex;">
+            <li style="padding: 20px"><a href="16.Etiqueta span y hr.html">Anterior </a></li>
+            <li style="padding: 20px"><a href="18.Metadatos en html.html">Siguiente apunte</a></li>
+        </ul>
         <hr>
         <footer>
             <center>
-            <table>
-                <tr>
-                    <td>
-                <div>
-                    <h4>Acerca de:</h4>
-                    <ul>    	
-                        <li><a href="Curriculum.html" target="_blank">Sobre mi(Curriculum)</a></li>
-                        <li ><a href="Objetivos de la web.html" target="_blank">Objetivos de la web</a></li>
-                        <li ><a href="https://paucasesnovescifp.cat/" target="_blank">Institución pertneciente</a></li>
-                    </ul>
-                </div>
-            </td>
-            <td>
-                <div>
-                    <h4>Redes Institución:</h4>
-                    <ul>    	
-                        <li><a href="https://www.instagram.com/paucasesnovescifp/?hl=es" target="_blank">Instagram</a></li>
-                        <li><a href="https://twitter.com/cifppau" target="_blank">X</a></li>
-                    </ul>
-                </div>
-            </td>
-            </tr>
-            </table>
-        </center>
+                <table>
+                    <tr>
+                        <td>
+                            <div>
+                                <h4>Acerca de:</h4>
+                                <ul>
+                                    <li><a href="Curriculum.html" target="_blank">Sobre mi(Curriculum)</a></li>
+                                    <li><a href="Objetivos de la web.html" target="_blank">Objetivos de la web</a></li>
+                                    <li><a href="https://paucasesnovescifp.cat/" target="_blank">Institución
+                                            pertneciente</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <h4>Redes Institución:</h4>
+                                <ul>
+                                    <li><a href="https://www.instagram.com/paucasesnovescifp/?hl=es"
+                                            target="_blank">Instagram</a></li>
+                                    <li><a href="https://twitter.com/cifppau" target="_blank">X</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </center>
         </footer>
-    </body>
+</body>
+
 </html>
