@@ -1,0 +1,41 @@
+body {
+    padding: 0%;
+    margin: 0%;
+}
+
+.titulo {
+    padding-top: 10%;
+    padding-bottom: 20%;
+    padding-right: 50%;
+    position:relative;
+    display:grid;
+    align-items:flex-end;
+    justify-content: center;
+
+
+    background-image: url(/imagenes/imIMG.PNG) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    max-width:100%;
+    overflow-x: hidden;
+ 
+ 
+}
+.titulo h1,h2,h4 {
+    color: white;
+}
+.button {
+    width: 30%;
+    padding: 8px;
+    margin-top: 80%;
+    margin-left: 100%;
+    background-color: whitesmoke;
+    border-radius: 90px;
+    text-align: center;
+    border: 4px solid rgba(52, 111, 219, 0.911);
+    box-shadow:5px 5px 12px #879ccacc;
+    opacity: 98%;
+
+}
