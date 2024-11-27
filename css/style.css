@@ -1,5 +1,6 @@
 body {
-    background:linear-gradient(45deg,rgb(26, 79, 227),rgb(18, 15, 35),rgb(2, 24, 31),rgb(17, 80, 255));
+    background: linear-gradient(to right,#0e4b68, rgba(51, 72, 112, 0.711), #0d2b4f,rgb(16, 16, 79) );
+    /*background:linear-gradient(45deg,rgb(168, 175, 191),rgb(18, 15, 35),rgb(62, 91, 157),rgb(171, 181, 210));*/
     padding: 0%;
     margin: 0%;
     background-size: 200% 200%;
@@ -38,14 +39,13 @@ body {
     position: relative;
     display:flex;
     justify-content: center;
-    border: 1px solid #fafafa10;
     border-radius: 2rem;
 
-    background: #18010149 ;
+    background: linear-gradient(#205e7b50, rgba(255, 255, 255, 0.567));
     backdrop-filter:blur(7px);
-    box-shadow:2px 5px 133px #879ccacc;
+    box-shadow:2px 5px 33px #879ccacc;
     gap: 1%;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.553);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.553);
 
 
 }
@@ -97,16 +97,16 @@ p {
     text-align: center;
     border: none;
     outline: none;
-    background: #01151896 ;
+    background: #0115185f ;
     backdrop-filter:blur(7px);
-    box-shadow:2px 2px 43px #40ffa0c8;
+    box-shadow: 0 0 5px rgb(17, 20, 12), 0 0 25px rgb(7, 7, 7);
     color: rgb(234, 255, 0); /* Color del texto dentro del enlace, Tener en cuenta para cambiarlo a un color acorde a la paleta*/
     text-decoration: none; /* Elimina subrayado, Posibles cambios a realizar a futuri en este boton  */
 }
 .button:hover {
-    box-shadow: 0 0 5px rgb(170, 255, 0),
-    0 0 25px rgb(102, 255, 0), 0 0 50px rgb(225, 255, 0),
-    0 0 0px rgb(196, 255, 2), 0 0 200px rgb(1, 81, 18);
+    box-shadow: 0 0 5px rgb(0, 221, 255),
+    0 0 25px rgb(5, 83, 167), 0 0 50px rgb(0, 174, 255),
+    0 0 0px rgb(84, 110, 155), 0 0 200px rgb(224, 227, 225);
 }
 
 
@@ -129,10 +129,17 @@ p {
     margin-top: 5%;
     border: 1px solid #ffe9e981;
     border-radius: 2rem;
-    background: linear-gradient(#61b5dcb9, rgba(255, 255, 255, 0.915));
+    background: linear-gradient(to right, #61b5dcb9, rgba(255, 255, 255, 0.739), rgb(220, 220, 220), rgba(13, 13, 125, 0.715));
+    background-size: 400% 400%;
     backdrop-filter:blur(12px);
     box-shadow:2px 5px 43px #bec5d6cc;
+    animation: nav1 20s ease infinite ;
          
+}
+@keyframes nav1{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
 }
 .initial-nav-grid{
     
@@ -268,5 +275,52 @@ p {
     margin-left: 8%;
 }
 
+/*Footer*/
+
+.footer1{
+    height: 100%;
+    width: auto;
+    display: grid;
+    margin: 4%;
+    margin-left: 35%;
+    margin-right: 35%;
+    grid-template-columns: repeat(2,1fr);
+}
+.acerca-de h4{
+    margin: 12%;
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+}
+.acerca-de{
+    margin: 2%;
+    margin-right: 12%;
+}
+.itemsFooter{
+    margin: 2%; 
+    padding: 5px;
+    line-height: 1.8;
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+    border-radius: 2rem;
+}
+.itemsFooter:hover {
+    box-shadow: 0 0 5px rgb(43, 200, 145),
+    0 0 25px rgb(188, 177, 52), 0 0 50px rgb(50, 9, 173),
+    0 0 0px rgb(255, 124, 2), 0 0 200px rgb(63, 159, 135);
+
+}
+
+.redes {
+    margin: 2%;
+    margin-left: 12%;
+}
+.redes h4 {
+    margin: 12%;
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+}
 
 
