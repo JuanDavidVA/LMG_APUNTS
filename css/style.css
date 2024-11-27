@@ -1,5 +1,5 @@
 body {
-    background:linear-gradient(45deg,rgb(15, 45, 129),rgb(4, 10, 8),rgb(2, 24, 31),rgb(15, 45, 129));
+    background:linear-gradient(45deg,rgb(26, 79, 227),rgb(18, 15, 35),rgb(2, 24, 31),rgb(17, 80, 255));
     padding: 0%;
     margin: 0%;
     background-size: 200% 200%;
@@ -25,6 +25,7 @@ body {
     background-position: center;
     background-size: cover;
     max-width:100%;
+    overflow-x: hidden;
 }
 
 .titulo{
@@ -44,6 +45,8 @@ body {
     backdrop-filter:blur(7px);
     box-shadow:2px 5px 133px #879ccacc;
     gap: 1%;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.553);
+
 
 }
 .titulo div {
@@ -107,7 +110,7 @@ p {
 }
 
 
-/*Separato"separa el hero del nav"*/
+                            /*Separato"separa el hero del nav"*/
 
 .separator{
     width: 100%;
@@ -116,9 +119,154 @@ p {
 
     background: linear-gradient(#61b5dcb9, rgba(255, 255, 255, 0.915));
     backdrop-filter:blur(1px);
-    box-shadow:2px 5px 233px #eaedf4cc;
+    box-shadow:2px 5px 153px #eaedf4ec;
 }
 
 
                                 /* Index -->*/
-            
+.content-nav{
+    margin: 7%;
+    margin-top: 5%;
+    border: 1px solid #ffe9e981;
+    border-radius: 2rem;
+    background: linear-gradient(#61b5dcb9, rgba(255, 255, 255, 0.915));
+    backdrop-filter:blur(12px);
+    box-shadow:2px 5px 43px #bec5d6cc;
+         
+}
+.initial-nav-grid{
+    
+    margin: 4%;
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    column-gap: 50px;
+    row-gap: 50px;
+}
+.uniti1-content-grid {
+    border-radius: 2rem;
+    background: linear-gradient(#61b5dcb9, rgba(255, 255, 255, 0.915));
+    backdrop-filter:blur(7px);
+    box-shadow:2px 5px 133px #879ccacc;
+}
+.uniti2-content-grid {
+    border-radius: 2rem;
+    background: linear-gradient(#61b5dcb9, rgba(255, 255, 255, 0.915));
+    backdrop-filter:blur(7px);
+    box-shadow:2px 5px 133px #879ccacc;
+}
+.uniti3-content-grid {
+    border-radius: 2rem;
+    background: linear-gradient(#61b5dcb9, rgba(255, 255, 255, 0.915));
+    backdrop-filter:blur(7px);
+    box-shadow:2px 5px 133px #879ccacc;
+}
+.uniti4-content-grid {
+    border-radius: 2rem;
+    background: linear-gradient(#61b5dcb9, rgba(255, 255, 255, 0.915));
+    backdrop-filter:blur(7px);
+    box-shadow:2px 5px 133px #879ccacc;
+}
+.uniti5-content-grid {
+    border-radius: 2rem;
+    background: linear-gradient(#61b5dcb9, rgba(255, 255, 255, 0.915));
+    backdrop-filter:blur(7px);
+    box-shadow:2px 5px 133px #879ccacc;
+}
+
+.uniti6-content-grid {
+    border-radius: 2rem;
+    background: linear-gradient(#61b5dcb9, rgba(255, 255, 255, 0.915));
+    backdrop-filter:blur(7px);
+    box-shadow:2px 5px 133px #879ccacc;
+}
+/*titulo de unidades*/
+.unidades{
+        margin: 3%;
+        font-size: 60px;
+        margin-left: 4%;
+        margin-bottom: 1px;
+        border-bottom:3px solid white;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(4, 8, 9, 0.797);
+}
+
+/*unidad 1-2-3-4-5-6 content index*/
+.content-index{
+    display: flex;
+    margin: 4%;
+    margin-top: 1%;
+}
+ .case-img {
+    width: 100%;
+    height: 28vh;
+    background-image: url(/imagenes/imgHTMLtr.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow:2px 5px 133px #0af9d25e;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    max-width:100%;
+    overflow-x: hidden;
+}
+.case-img h3 {
+    width: 40%;
+    padding: 2%;
+    margin-top: 32%;
+    margin-left:4%;
+    text-decoration: none;
+
+    border-radius: 12px;
+    background: #032f353a ;
+    backdrop-filter:blur(1px);
+    box-shadow:2px 2px 43px #0b006a;
+}
+.case-img h3 a {
+    text-decoration: none;
+    color: rgb(202, 10, 10);
+
+}
+.case-img h3:hover {
+    box-shadow: 0 0 5px rgb(63, 5, 3),
+    0 0 25px rgb(183, 29, 12), 0 0 50px rgb(144, 11, 11),
+    0 0 0px rgb(255, 124, 2), 0 0 200px rgb(172, 7, 7);
+}
+.uniti1-content-grid h4 {
+    margin-left: 8%;
+}
+.puntos ol li a {
+    text-decoration: none;
+    border-radius: 2rem;
+    padding: 3px;
+    color:rgb(74, 77, 75);
+    font-size: 14px;
+    line-height: 1.7;
+    
+}
+.puntos ol li a:hover {
+    box-shadow: 0 0 5px rgb(43, 200, 145),
+    0 0 25px rgb(183, 29, 12), 0 0 50px rgb(50, 9, 173),
+    0 0 0px rgb(255, 124, 2), 0 0 200px rgb(63, 159, 135);
+    
+
+}
+
+.uniti2-content-grid h4 {
+    margin-left: 8%;
+}
+.uniti3-content-grid h4 {
+    margin-left: 8%;
+}
+.uniti4-content-grid h4 {
+    margin-left: 8%;
+}
+.uniti5-content-grid h4 {
+    margin-left: 8%;
+}
+.uniti6-content-grid h4 {
+    margin-left: 8%;
+}
+
+
+
