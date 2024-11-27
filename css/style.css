@@ -20,7 +20,7 @@ body {
 .portada {
     width: 100%;
     height: 100vh;
-    background-image: url(/css/imgenes-css-fondos/portada.png) ;
+    background-image: url('./imgenes-css-fondos/portada.png') ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -200,7 +200,7 @@ p {
  .case-img {
     width: 100%;
     height: 28vh;
-    background-image: url(/css/imgenes-css-fondos/imgHTMLtr.png) ;
+    background-image: url('./imgenes-css-fondos/imgHTMLtr.png') ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
