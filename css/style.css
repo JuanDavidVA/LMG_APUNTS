@@ -1,9 +1,22 @@
 body {
-    background-color: #2c2c2c;
+    background:linear-gradient(45deg,rgb(15, 45, 129),rgb(4, 10, 8),rgb(2, 24, 31),rgb(15, 45, 129));
     padding: 0%;
     margin: 0%;
+    background-size: 200% 200%;
+    animation: cambiar 10s ease infinite;
+}
+ /* posible eliminacion no entra del temario de css basico, se trata de el keyframe nos permite 
+ especificar el momento concreto del estado de una animacion y animation nos permite especificar
+  el elemento que le damos la animacion con las propiedades declaradas en el key frame*/
+ 
+@keyframes cambiar{                        
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
 }
 
+
+                        /*Header --> hero + hero-content + button */
 .portada {
     width: 100%;
     height: 100vh;
@@ -13,8 +26,8 @@ body {
     background-size: cover;
     max-width:100%;
     overflow-x: hidden;
-
 }
+
 .titulo{
     width:auto;
     height:73vh;
@@ -73,9 +86,6 @@ p {
     margin-left: 13%;
 }
 
-
-
-
 .button {
     width: 30%;
     padding: 17px;
@@ -83,12 +93,33 @@ p {
     margin-left: 6%;
     border-radius: 24px;
     text-align: center;
-    border: 1px solid #0099ff79;
-
+    border: none;
+    outline: none;
     background: #01151896 ;
     backdrop-filter:blur(7px);
-    box-shadow:2px 2px 43px #5d78ffc8;
-    color: rgb(234, 255, 0); /* Color del texto dentro del enlace */
-    text-decoration: none; /* Elimina subrayado */
-
+    box-shadow:2px 2px 43px #40ffa0c8;
+    color: rgb(234, 255, 0); /* Color del texto dentro del enlace, Tener en cuenta para cambiarlo a un color acorde a la paleta*/
+    text-decoration: none; /* Elimina subrayado, Posibles cambios a realizar a futuri en este boton  */
 }
+.button:hover {
+    box-shadow: 0 0 5px rgb(170, 255, 0),
+    0 0 25px rgb(102, 255, 0), 0 0 50px rgb(225, 255, 0),
+    0 0 0px rgb(196, 255, 2), 0 0 200px rgb(1, 81, 18);
+}
+
+
+/*Separato"separa el hero del nav"*/
+
+.separator{
+    width: 100%;
+    height: 80px;
+    border: 1px solid #fafafa10;
+
+    background: linear-gradient(#61b5dcb9, rgba(255, 255, 255, 0.915));
+    backdrop-filter:blur(1px);
+    box-shadow:2px 5px 233px #eaedf4cc;
+}
+
+
+                                /* Index -->*/
+            
