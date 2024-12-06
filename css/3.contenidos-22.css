@@ -1,0 +1,11 @@
+ol li{
+    font-size:20px ;
+    text-align: justify;
+    line-height: 1.5;
+} 
+img {
+    border-radius: 21px;
+    max-width: 100%;
+    height: auto;
+    margin: 3%;
+}
