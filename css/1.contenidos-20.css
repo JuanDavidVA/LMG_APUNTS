@@ -1,0 +1,16 @@
+p {
+    font-size:20px ;
+    text-align: justify;
+    line-height: 1.5;
+
+} 
+ol li{
+    font-size:20px ;
+    text-align: justify;
+    line-height: 1.5;
+} 
+img {
+    border-radius: 24px;
+    max-width: 100%;
+    height: auto;
+}

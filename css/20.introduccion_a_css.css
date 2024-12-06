@@ -24,6 +24,7 @@ body {
     backdrop-filter:blur(1px);
     box-shadow:2px 5px 15px #eaedf4c7;
     grid-area: n1;
+    scrollbar-width: none;
     overflow: auto;
 
 }
@@ -117,6 +118,7 @@ body {
 
 }
 .contenidos{
+    align-items: center;
     border-radius: 25px ;
     background: linear-gradient(rgba(255, 255, 255, 0.77),#7daec350, rgba(255, 255, 255, 0.671));
     backdrop-filter:blur(7px);
@@ -124,7 +126,7 @@ body {
     gap: 1%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.553);
         overflow: auto;
-        padding: 30px;
+        padding: 70px;
 
 }
 .contenidos h1{
