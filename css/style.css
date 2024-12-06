@@ -16,6 +16,9 @@ body {
     100%{background-position: 0 50%;}
 }
 
+*{
+    scrollbar-width: none;
+}
 
                         /*Header --> hero + hero-content + button */
 .portada {
@@ -89,7 +92,7 @@ p {
 }
 .imgen {
     margin: 1%;
-    width: 50%;
+    width: 30%;
     height: 38%;
     align-items: center;
     padding: 2%;
@@ -141,20 +144,15 @@ p {
 .content-nav{
     margin: 7%;
     margin-top: 5%;
-    border: 1px solid #ffe9e981;
     border-radius: 2rem;
     background: linear-gradient(to right, #61b5dcb9, rgba(255, 255, 255, 0.739), rgb(220, 220, 220), rgba(13, 13, 125, 0.715));
     background-size: 400% 400%;
     backdrop-filter:blur(12px);
     box-shadow:2px 5px 43px #bec5d6cc;
-    animation: nav1 20s ease infinite ;
-         
+    overflow: auto;
+       
 }
-@keyframes nav1{
-    0%{background-position: 0 50%;}
-    50%{background-position: 100% 50%;}
-    100%{background-position: 0 50%;}
-}
+
 .initial-nav-grid{
     
     margin: 4%;

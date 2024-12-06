@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+        margin: 0%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.mygrid{
+    display: grid;
+    grid-template-columns: 300px 1fr 1fr;
+    grid-template-rows: 50px 900px  211px;
+    grid-template-areas: "n1 n1 n1" "s2 m1 m1" "f1 f1 f1" ;
+    position: relative;
+}
+
+
+/* -------------------------------------------header-------------------- css*/
+.header1{
+    background: linear-gradient(#61b5dcb9, rgba(255, 255, 255, 0.915));
+    backdrop-filter:blur(1px);
+    box-shadow:2px 5px 15px #eaedf4c7;
+    grid-area: n1;
+    overflow: auto;
+
+}
+.bar{
+    position: absolute;
+}
+.flexi ol {
+    display: flex;
+    width: 100%;
+    height: 41px;
+    margin: 4px;
+    align-items: center;
+    
+    
+}
+.flexi ol li {
+    padding: 12px 15px;
+    list-style-type:none ;
+}
+.flexi ol li a {
+    text-decoration: none;
+    display: block;
+
+}
+.inicio1{
+    margin-right: 16%;
+    margin-left: 10%;
+
+}
+.footer-acerca{
+    margin-right: 16%;
+    margin-left: 55%;
+
+}
+.flexi ol li:hover {
+    border: 1px;
+    box-shadow: 0 0 1px rgb(221, 214, 137),
+    0 0 25px rgb(0, 162, 255), 0 0 50px #997deb,
+    0 0 0px rgb(135, 121, 213), 0 0 200px rgb(109, 225, 196);
+}
+
+
+
+
+
+
+/* -------------------------------------------sidebard nava --> elemento variable -------------------- css*/
+
+.lateralNav{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(white, rgba(161, 159, 159, 0.383),#61b5dc50, rgba(255, 255, 255, 0.915), #61b5dcb9);
+    grid-area: s2;
+    scrollbar-width: none;
+    overflow: auto;
+
+}
+.ol-nav{
+    width: 97%;
+    height: 41px;
+    margin: 4px;
+    padding: 0%;
+
+}
+.ol-nav li {
+    list-style-type:none ;
+}
+.ol-nav li a {
+    text-decoration: none;
+    display: block;
+    padding: 10%;
+    text-align: center;
+}
+.ol-nav li a:hover{
+    border: 1px;
+    box-shadow: 0 0 1px rgb(221, 214, 137),
+    0 0 25px rgb(0, 162, 255), 0 0 50px rgb(153, 125, 235),
+    0 0 0px rgb(135, 121, 213), 0 0 200px rgb(109, 225, 196);
+}
+
+/* ------------------------------------------  my seccion se añadira todo l css del contenido-------------------- css*/
+
+.article{
+    background: linear-gradient(45deg,#0e4b68, rgba(51, 72, 112, 0.711), #0d2b4f,rgb(16, 16, 79) );
+    grid-area: m1;
+    overflow: auto;
+    padding: 35px;
+    padding-right: 250px;
+    scrollbar-width: none;
+
+
+}
+.contenidos{
+    border-radius: 25px ;
+    background: linear-gradient(rgba(255, 255, 255, 0.77),#7daec350, rgba(255, 255, 255, 0.671));
+    backdrop-filter:blur(7px);
+    box-shadow:2px 2px 23px #879ccad9;
+    gap: 1%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.553);
+        overflow: auto;
+        padding: 30px;
+
+}
+.contenidos h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 43px;
+    margin-bottom: 55px;
+}
+.contenidos h3{
+    text-align: center;
+}
+.contenidos ul {
+    list-style-type:none ;
+    padding-left: 0% ;
+    padding-right:25% ;
+}
+.contenidos ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 5%;
+    text-align: center;
+}
+.contenidos ul li a:hover{
+    border: 1px;
+    box-shadow: 0 0 1px rgb(221, 214, 137),
+    0 0 25px rgb(0, 162, 255), 0 0 50px rgb(153, 125, 235),
+    0 0 0px rgb(135, 121, 213), 0 0 200px rgb(109, 225, 196);
+}
+
+
+
+
+/* -------------------------------------------footer -------------------- css*/
+
+.footer1{
+
+    background: linear-gradient(#61b5dcd1, rgba(255, 255, 255, 0.915));
+    backdrop-filter:blur(1px);
+    box-shadow:2px 5px 13px #61b5dcd9;
+        grid-area:f1 ;
+        overflow: auto;
+    display: flex;
+}
+.about{
+    width: 10%;
+    height: 60%;
+    margin: 1% 20%;
+}
+.network{
+    width: 10%;
+    height: 60%;
+    margin: 1% 20%;
+}
+.copy{
+    width: 100%;
+    text-align: center;
+}
