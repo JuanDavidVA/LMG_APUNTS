@@ -20,7 +20,6 @@
                             <li><a href="10.HTML5_y_su_evolucion.html">Unidad&nbsp;2:&nbsp;HTML&nbsp;avanzado</a></li>
                             <li><a href="20.introduccion_a_css.html">Unidad&nbsp;3:&nbsp;CSS&nbsp;basico</a></li>
                             <li><a href="31.css_avanzado_introduccion.html">Unidad&nbsp;4:&nbsp;CSS&nbsp;avanzado</a></li>
-                            <li class="footer-acerca"><a href="#acerca">about</a></li>
                         </ol>
                 </div>
                 </nav>
@@ -44,28 +43,88 @@
         <section class="article">
           <div class="contenidos">
             <h1>Layouts avanzados con Flexbox y grid</h1>
-                 <p class="parrafos">CSS es un lenguaje de estilos el cual esta orientado a realizar el control de la 
-                presentación y el diseño de todo un documento HTML como hemos visto en la unidad anterior. CSS nos permite establecer el diseño a nuestro gusto siguiendo la estructura tanto del html como la propia de css.</p>
-                
-                Ventajas que  nos ofrece css:
-                
-                <ol class="listaS">
-                <li><b>Diseños mejorados:</b> se puede aplicar estilos a nuestro gusto y establecer una mayor profesionalidad a nuestra web.</li>
-                <li><b>Separación del contenido:</b> nos permite separar de los estilos al la estructura html permitiéndonos tener una mejor organización a la hora de trabajar con ellos</li>
-                <li><b>Facilidad del mantenimiento:</b> con un único archivo css podemos utilizarlo para aplicar ciertos estilos a diferentes páginas html de tal forma que el mantenimiento sea mucho mas accesibles y fácil de gestionar.</li>
-                
-                <li><b>Rendimiento y velocidad:</b> mediante archivos CSS podemos permitir que las web carguen mucho más rápido, de tal forma como comentamos antes con la reutilización de archivos css.</li>
-                </ol>
-                <div class="imgen">
-                        <img class="imagenes" src="imagenesUT3/imgCSSçpng.png" alt="imgcss">
-                </div>
+                                
+                <h5 class="subtitulo">Flexbox avanzado</h5>
+
+                    <p class="parrafo">Flexbox se trata de una herramienta muy flexible para crear diseños en fila o columna, donde los elementos se alinean y ajustan de forma automática.</p>
+
+                <h5 class="subtitulo">Flex-shrink</h5>
+
+                    <p class="parrafo">Esto nos permite controlar cómo se reduce la medida de un elemento cuando no hay casi espacio disponible.</p>
+
+<pre class="box"> 
+    <code>.element {
+        flex-shrink: 1; 
+ }
+</code>
+</pre>
+
+                <h5 class="subtitulo">Align-self</h5>
+
+                    <p class="parrafo">Esto nos permite que un solo elemento en un contenedor flex este tenga una alineación diferente al resto</p>
+
+<pre class="box"> 
+    <code>.element {
+        align-self: center; 
+ }
+</code>
+</pre>
+
+                <h5 class="subtitulo">CSS Grid Layout</h5>
+                    <p>Se trata de una herramienta más potente que flexbox cuando se trata de crear layouts en dos a más dimensiones, permite la colocación de elementos en cuadrícula con una alta precisión. Propiedades:</p>
+
+                <h5 class="subtitulo">Grid-template-columns y grid-template-rows</h5>
+
+                    <p class="parrafo">Nos permiten establecer el número de columnas y filas que deseamos que nuestra cuadrícula tenga</p>
+
+
+
+<pre class="box"> 
+    <code>.grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr; 
+        grid-template-rows: 100px auto;
+    }
+</code>
+</pre>
+
+
+                <h5 class="subtitulo">Grid-column y grid-rows</h5>
+
+                    <p class="parrafo">Nos permite indicarle a un elemento que ocupe diversas columnas o filas en la cuadrícula </p>
+
+<pre class="box"> 
+    <code>.element-gran {
+        grid-column: span 2; 
+        grid-row: span 1; 
+    }
+</code>
+</pre>
+
+                <h5 class="subtitulo">Gap </h5>
+
+                    <p class="parrafo">Nos permite definir un espacio entre las filas y columnas de la cuadricula</p>
+
+<pre class="box"> 
+    <code>.grid {
+        gap: 20px;
+ }
+</code>
+</pre>
+
+                <h5 class="subtitulo">Uso combinado de Flexbox y grid </h5>
+
+                    <p class="parrafo">Es bastante útil  realizar la combinación de estos 2 para obtener los mejores resultados. Orientando el grid para la estructura general y el flexbox para los elementos interiores de la estructura.</p>
+
                 
               <h3>Continuar temario</h3>
               
                 <div class="cambiaPagina">
             
                     <ul  style="display: flex;" >
-                        <li style="padding: 20px"><a  href="21.aplicacion_de_stilos.html">siguiente apunte</a></li>
+                        <li style="padding: 20px"><a  href="33.propiedades_avanzadas_fuentes.html">anterior apunte</a></li>
+
+                        <li style="padding: 20px"><a  href="35.popover_API.html">siguiente apunte</a></li>
                     </ul>
              </div>
 
