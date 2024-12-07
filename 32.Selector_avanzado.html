@@ -43,28 +43,143 @@
         <section class="article">
           <div class="contenidos">
             <h1>Selector avanzado</h1>
-                 <p class="parrafos">CSS es un lenguaje de estilos el cual esta orientado a realizar el control de la 
-                presentación y el diseño de todo un documento HTML como hemos visto en la unidad anterior. CSS nos permite establecer el diseño a nuestro gusto siguiendo la estructura tanto del html como la propia de css.</p>
-                
-                Ventajas que  nos ofrece css:
-                
-                <ol class="listaS">
-                <li><b>Diseños mejorados:</b> se puede aplicar estilos a nuestro gusto y establecer una mayor profesionalidad a nuestra web.</li>
-                <li><b>Separación del contenido:</b> nos permite separar de los estilos al la estructura html permitiéndonos tener una mejor organización a la hora de trabajar con ellos</li>
-                <li><b>Facilidad del mantenimiento:</b> con un único archivo css podemos utilizarlo para aplicar ciertos estilos a diferentes páginas html de tal forma que el mantenimiento sea mucho mas accesibles y fácil de gestionar.</li>
-                
-                <li><b>Rendimiento y velocidad:</b> mediante archivos CSS podemos permitir que las web carguen mucho más rápido, de tal forma como comentamos antes con la reutilización de archivos css.</li>
-                </ol>
-                <div class="imgen">
-                        <img class="imagenes" src="imagenesUT3/imgCSSçpng.png" alt="imgcss">
-                </div>
+                 <p class="parrafo">El selector avanzado en CSS nos permite aplicar  estilos con mucha más precisión y flexibilidad, permitiendo seleccionar elementos específicos en función de su posición.</p>
+
+                <h5 class="subtitulo">Selector de atributos</h5>
+
+                <p class="parrafo">Este nos permite aplicar estilos a los elementos HTML que contienen un determinado atributo o valor de atributo,Son especialmente útiles para dar estilos a formularios  </p>
+
+                <h5 class="subtitulo">Seleccionar elementos con un atributo específico:<h5>
+
+<pre class="box"> 
+    <code>input[type="text"] {
+    border: 1px solid blue;
+}
+
+</code>
+</pre>
+
+
+                        <h5 class="subtitulo">Selectores combinados</h5>
+                        <p class="parrafo">Los selectores combinados permite la selección de los elementos que tiene una relación específica entre elementos dentro de un documento, combinaciones comunes:</p>
+
+                        <h5 class="subtitulo">Combinador descendente</h5>
+
+<pre class="box"> 
+    <code>div p {
+    color: red;
+ }
+</code>
+</pre>
+
+                     <h5 class="subtitulo">Combinador de hijos directos</h5>
+
+<pre class="box"> 
+    <code>div > p {
+        color: blue;
+ }
+</code>
+</pre>
+
+
+                    <h5 class="subtitulo">Combinador de hermanos adyacentes</h5>
+
+<pre class="box"> 
+    <code>h1 + p {
+            font-weight: bold;
+ }
+</code>
+</pre> 
+
+                    <h5 class="subtitulo">Combinador de hermanos generales </h5>
+
+
+<pre class="box"> 
+    <code>h2 ~ p {
+        color: gray;
+ } 
+</code>
+</pre>
+
+                    <h5 class="subtitulo">Selectores de pseudoclases</h5>
+
+                    <p class="parrafo">Las pseudo-clases son selectores que se utilizan para aplicar estilos a un elemento en un estado o condición particular:</p>
+
+                    <p class="parrafo">:hover Aplica estilos cuando el usuario pasa el ratón sobre el elemento</p>
+
+<pre class="box"> 
+    <code>a:hover {
+    color: red;
+ }
+</code>
+</pre> 
+
+                    <p class="parrafo">:nth-child() Selecciona elementos en función de su posición entre sus hermanos</p>
+
+<pre class="box"> 
+    <code>tr:nth-child(odd) {
+        background-color: #f0f0f0;
+}
+</code>
+</pre>
+
+
+                    <p class="parrafo">:first-of-type Selecciona el primer elemento de su tipo dentro de su padre</p>
+
+<pre class="box"> 
+    <code>p:first-of-type {
+        font-weight: bold;
+}
+
+</code>
+</pre>
+
+                <p class="parrafo">:not() Selecciona todos los elementos menos aquellos que coinciden con el selector especificado.</p>
+
+<pre class="box"> 
+    <code>div:not(.important) {
+        background-color: yellow;
+}
+</code>
+</pre>
+
+                <h5 class="subtitulo">Selector pseudo-elemento</h5>
+
+                <p class="parrafo">:not() Estos permiten aplicar estilos a una parte especifica de un elemento,com su contenido antes o despues, o una línea de texto:</p>
+
+
+
+                <h5 class="subtitulo">pseudo-elemento :before</h5>
+                <p class="parrafo">Añade contenido o estilos antes del contenido real de un elemento</p>
+
+<pre class="box"> 
+    <code>h1::before {
+    content: "★ ";
+color: gold;
+}
+</code>
+</pre>
+
+
+                             <h5 class="subtitulo">pseudo-elemento :after</h5>
+                            <p class="parrafo">Añade contenido o estilos después del contenido real de un elemento</p>
+
+<pre class="box"> 
+    <code>p::after {
+    content: " (Final)";
+color: gray;
+}
+</code>
+</pre>
+
                 
               <h3>Continuar temario</h3>
               
                 <div class="cambiaPagina">
             
                     <ul  style="display: flex;" >
-                        <li style="padding: 20px"><a  href="21.aplicacion_de_stilos.html">siguiente apunte</a></li>
+                        <li style="padding: 20px"><a  href="31.css_avanzado_introduccion.html">anterior apunte</a></li>
+                        <li style="padding: 20px"><a  href="33.propiedades_avanzadas_fuentes.html">siguiente apunte</a></li>
                     </ul>
              </div>
 
