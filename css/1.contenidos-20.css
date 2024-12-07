@@ -16,19 +16,31 @@
 } 
 
 .box {
-    width: auto; 
-    height: auto; 
+    width: 90%; 
+    max-width: 800px; 
     background-color: #44475a; 
     color: #f8f8f2;
     border-radius: 15px;
-    padding: 2px;
+    padding: 20px;
     margin: 20px auto; 
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-    font-size: 10'px;
-  }
+    font-size: 14px; 
+    overflow: hidden;
+}
   .subtitulo {
     font-size:25px ;
     text-align: justify;
     line-height: 1.5;
 
+}
+code {
+    display: block; 
+    white-space: pre-wrap; 
+    word-wrap: break-word; 
+    overflow-x: auto; 
+    background-color: #282a36; 
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.5;
 }
