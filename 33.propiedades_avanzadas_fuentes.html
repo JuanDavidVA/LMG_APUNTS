@@ -43,28 +43,90 @@
         <section class="article">
           <div class="contenidos">
             <h1>Propiedades avanzadas de fuentes y tipografias</h1>
-                 <p class="parrafos">CSS es un lenguaje de estilos el cual esta orientado a realizar el control de la 
-                presentación y el diseño de todo un documento HTML como hemos visto en la unidad anterior. CSS nos permite establecer el diseño a nuestro gusto siguiendo la estructura tanto del html como la propia de css.</p>
-                
-                Ventajas que  nos ofrece css:
-                
-                <ol class="listaS">
-                <li><b>Diseños mejorados:</b> se puede aplicar estilos a nuestro gusto y establecer una mayor profesionalidad a nuestra web.</li>
-                <li><b>Separación del contenido:</b> nos permite separar de los estilos al la estructura html permitiéndonos tener una mejor organización a la hora de trabajar con ellos</li>
-                <li><b>Facilidad del mantenimiento:</b> con un único archivo css podemos utilizarlo para aplicar ciertos estilos a diferentes páginas html de tal forma que el mantenimiento sea mucho mas accesibles y fácil de gestionar.</li>
-                
-                <li><b>Rendimiento y velocidad:</b> mediante archivos CSS podemos permitir que las web carguen mucho más rápido, de tal forma como comentamos antes con la reutilización de archivos css.</li>
-                </ol>
-                <div class="imgen">
-                        <img class="imagenes" src="imagenesUT3/imgCSSçpng.png" alt="imgcss">
-                </div>
+                       <p class="parrafo">El control de la tipografía de una página web es crucial para garantizar una buena legibilidad y una estética consistente, en el css.</p>
+
+                        <h5 class="subtitulo">Control avanzado de tipografía</h5>
+                        <p class="parrafo">Además de poder definir  fuentes de manera personalizada podemos establecer ciertas propiedades para controlar otros aspectos de las fuentes tipográficas</p>
+
+                        <h5 class="subtitulo">Propiedad letters-spacing </h5>
+
+                        <p class="parrafo">Nos permite ajustar el espacio entre las letras de un texto</p>
+
+<pre class="box"> 
+    <code>h1 {
+        letter-spacing: 2px; 
+ }
+</code>
+</pre>
+
+
+                            <h5 class="subtitulo">Propiedad line-height </h5>
+
+                            <p class="parrafo">Nos permite controlar el interlineado de un párrafo.</p>
+
+<pre class="box"> 
+    <code>p {
+    line-height: 1.6; 
+ }
+</code>
+</pre>
+
+                            <h5 class="subtitulo">Propiedad font-weight </h5>
+
+                            <p class="parrafo">Nos permite controlar el grosor del texto</p>
+
+<pre class="box"> 
+    <code>p {
+        font-weight: 300; 
+ }
+</code>
+</pre>
+
+                            <h5 class="subtitulo">Propiedad font-style </h5>
+
+                            <p class="parrafo">Nos permite controlar el estilo en que se va a mostrar nuestro fuente,cursiva,normal,oblicua</p>
+
+
+
+<pre class="box"> 
+    <code>p {
+        font-style: italic;
+ }
+</code>
+</pre>
+
+                            <h5 class="subtitulo">Propiedad text-transform</h5>
+
+                            <p class="parrafo">Nos permite cambiar la capitalización del texto, convirtiéndolo en mayúsculas,minúsculas o según la primera letra.</p>
+
+<pre class="box"> 
+    <code>p {
+        text-transform: uppercase;
+ }
+</code>
+</pre>
+
+                                <h5 class="subtitulo">Uso del web open Font Format:</h5>
+
+                                <p class="parrafo"> Se trata de formatos de fuentes comprimidos diseñados específicamente para el uso web. Este tipo de formato proporciona una compresión más eficiente que los formatos tradicionales.</p>
+
+<pre class="box"> 
+    <code>@font-face {
+        font-family: "Roboto";
+        src: url("fonts/Roboto-Regular.woff2") format("woff2"),
+        url("fonts/Roboto-Regular.woff") format("woff");
+ }
+</code>
+</pre>
+
                 
               <h3>Continuar temario</h3>
               
                 <div class="cambiaPagina">
             
                     <ul  style="display: flex;" >
-                        <li style="padding: 20px"><a  href="21.aplicacion_de_stilos.html">siguiente apunte</a></li>
+                        <li style="padding: 20px"><a  href="32.Selector_avanzado.html">anterior apunte</a></li>
+                        <li style="padding: 20px"><a  href="34.layouts_avanzados_grid.html">siguiente apunte</a></li>
                     </ul>
              </div>
 
