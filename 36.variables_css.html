@@ -43,28 +43,54 @@
         <section class="article">
           <div class="contenidos">
             <h1>Variables CSS</h1>
-                 <p class="parrafos">CSS es un lenguaje de estilos el cual esta orientado a realizar el control de la 
-                presentación y el diseño de todo un documento HTML como hemos visto en la unidad anterior. CSS nos permite establecer el diseño a nuestro gusto siguiendo la estructura tanto del html como la propia de css.</p>
-                
-                Ventajas que  nos ofrece css:
-                
-                <ol class="listaS">
-                <li><b>Diseños mejorados:</b> se puede aplicar estilos a nuestro gusto y establecer una mayor profesionalidad a nuestra web.</li>
-                <li><b>Separación del contenido:</b> nos permite separar de los estilos al la estructura html permitiéndonos tener una mejor organización a la hora de trabajar con ellos</li>
-                <li><b>Facilidad del mantenimiento:</b> con un único archivo css podemos utilizarlo para aplicar ciertos estilos a diferentes páginas html de tal forma que el mantenimiento sea mucho mas accesibles y fácil de gestionar.</li>
-                
-                <li><b>Rendimiento y velocidad:</b> mediante archivos CSS podemos permitir que las web carguen mucho más rápido, de tal forma como comentamos antes con la reutilización de archivos css.</li>
-                </ol>
-                <div class="imgen">
-                        <img class="imagenes" src="imagenesUT3/imgCSSçpng.png" alt="imgcss">
-                </div>
+                <p class="parrafo">Las variables en css, también conocidas como Custom properties, permiten definir  valores reutilizables dentro de un documento CSS, Esta característica permite facilitar la gestión y mantenimientos de proyectos grandes.</p>
+
+
+                <h5 class="subtitulo">1. Definir y utilizar variables:</h5>
+                <p class="parrafo">Las variables se definen dentro de cualquier selector utilizando el prefijo -- . Es habitual definir los en el selector :root para de que están disponibles globalmente en todo el documento</p>
+
+<pre class="box"> 
+    <code>:root {
+    --color-primari: #3498db;
+    --marge-petit: 10px;
+}
+body {
+        background-color: var(--color-primari);
+        margin: var(--marge-petit);
+ }
+</code>
+</pre>
+                            
+                            <h5 class="subtitulo">2.Beneficio de las variables en proyectos grandes </h5>
+                            <p class="parrafo">El usos de variables es realmente útil en proyectos grandes y complejos, ya que nos permite gestionar de forma más sencilla el cambio de valores en múltiples lugares manualmente.</p>
+
+                                <h5 class="subtitulo">Ventajas:<h5>
+                            <ol class="listaS">
+                                        <li>Mantenibilidad</li>
+                                        <li>Reutilización</li>
+                                        <li>Consistencia</li>
+                            </ol>
+
+
+                                <h5 class="subtitulo">3- Variables CSS con valores por defecto<h5>
+
+                                <p class="parrafo">Se puede proporcionar valores por defecto a las variables CSS en caso que no estén definidas, Esto es esencial a la hora de asegurarse que el diseño funcione incluso si las variables fallan o no se encuentran.</p>
+
+<pre class="box"> 
+    <code>h2 {
+            color: var(--color-primari, black);
+ }
+</code>
+</pre>
+
                 
               <h3>Continuar temario</h3>
               
                 <div class="cambiaPagina">
             
                     <ul  style="display: flex;" >
-                        <li style="padding: 20px"><a  href="21.aplicacion_de_stilos.html">siguiente apunte</a></li>
+                        <li style="padding: 20px"><a  href="35.popover_API.html">anterior apunte</a></li>
+                        <li style="padding: 20px"><a  href="37.animaciones_y_transiciones.html">siguiente apunte</a></li>
                     </ul>
              </div>
 
