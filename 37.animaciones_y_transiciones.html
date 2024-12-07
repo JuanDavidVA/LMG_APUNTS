@@ -44,28 +44,79 @@
         <section class="article">
           <div class="contenidos">
             <h1>Animaciones y transiciones</h1>
-                 <p class="parrafos">CSS es un lenguaje de estilos el cual esta orientado a realizar el control de la 
-                presentación y el diseño de todo un documento HTML como hemos visto en la unidad anterior. CSS nos permite establecer el diseño a nuestro gusto siguiendo la estructura tanto del html como la propia de css.</p>
-                
-                Ventajas que  nos ofrece css:
-                
-                <ol class="listaS">
-                <li><b>Diseños mejorados:</b> se puede aplicar estilos a nuestro gusto y establecer una mayor profesionalidad a nuestra web.</li>
-                <li><b>Separación del contenido:</b> nos permite separar de los estilos al la estructura html permitiéndonos tener una mejor organización a la hora de trabajar con ellos</li>
-                <li><b>Facilidad del mantenimiento:</b> con un único archivo css podemos utilizarlo para aplicar ciertos estilos a diferentes páginas html de tal forma que el mantenimiento sea mucho mas accesibles y fácil de gestionar.</li>
-                
-                <li><b>Rendimiento y velocidad:</b> mediante archivos CSS podemos permitir que las web carguen mucho más rápido, de tal forma como comentamos antes con la reutilización de archivos css.</li>
-                </ol>
-                <div class="imgen">
-                        <img class="imagenes" src="imagenesUT3/imgCSSçpng.png" alt="imgcss">
-                </div>
-                
+                <p class="parrafo">Las animaciones y transiciones en CSS son herramientas muy potentes que permiten añadir movimiento e interacción visual a las páginas web con el fin de mejorar la experiencia de usuario.</p>
+
+                        <h5 class="subtitulo">Transiciones</h5>
+                        <p class="parrafo">Las transiciones permiten que las propiedades de un elemento se visualice com mayor suavidad:</p>
+
+
+<pre class="box"> 
+    <code>button {
+background-color: lightblue;
+transition: background-color 0.3s ease;
+}
+</code>
+</pre>
+
+                                        <h5 class="subtitulo">2.Propiedades de transición</h5>
+                                        <p class="parrafo">Se pueden especificar diversas propiedades para animarlas simultáneamente con transition-property o utilizar all para aplicar a la transición todas las propiedade. </p>
+
+<pre class="box"> 
+    <code>div {
+width: 100px;
+height: 100px;
+background-color: lightgreen;
+transition: width 1s ease, background-color 0.5s ease-in-out;
+}
+
+</code>
+</pre>
+
+                                    <h5 class="subtitulo">3.Animaciones clave con @keyframe </h5>
+                                    <p class="parrafo">Nos permiten crear movimientos mas complejos que las transiciones. Utilizando la regla @keyframe para definir puntos intermedios del movimiento o animación.</p>
+
+
+
+
+
+<pre class="box"> 
+<h5 class="subtitulo">Sintaxis de keyframe<h5>
+    <code>@keyframes nombre-animación {
+0% { propietat: valor-inicial; }
+100% { propietat: valor-final; }
+}
+</code>
+</pre>
+
+<pre class="box"> 
+<h5 class="subtitulo">Sintaxis de animaciones<h5>
+    <code>element {
+animation: nombre-animación duración función-temporización retraso ciclos
+dirección;
+}
+</code>
+</pre>
+
+                                    <h5 class="subtitulo">Propiedades de animaciones</h5>
+
+                                    <p class="parrafo">Estas nos permite personalizar cómo se comportan las animaciones:</p>
+                                    <ol class="listaS">
+                                                    <li>animation-duration:controla el tiempo de duración</li>
+                                                    <li>animation-delay: define un pequeño retraso antes que la animación comience</li>
+                                                    <li>animation-iteration-count: Controla cuántas veces se repite la animación</li>
+                                                    <li>animation-direction: define si la animación va hacia delante o atrás o alterna</li>
+
+
+                                    <ol>
+
+
               <h3>Continuar temario</h3>
               
                 <div class="cambiaPagina">
             
                     <ul  style="display: flex;" >
-                        <li style="padding: 20px"><a  href="21.aplicacion_de_stilos.html">siguiente apunte</a></li>
+                        <li style="padding: 20px"><a  href="36.variables_css.html">anterior apunte</a></li>
+                        <li style="padding: 20px"><a  href="">siguiente apunte"Proximamente javascript"</a></li>
                     </ul>
              </div>
 
